@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tushar Iyer | Quiz Game</title>
+    <style>
+        body {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+        #container {
+            margin-top: 1%;
+            margin-left: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="800px" width="1280px"></canvas>
+        <script type='text/javascript'>
+            var Module = {
+                TOTAL_MEMORY: 268435456,
+                errorhandler: null, // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+                compatibilitycheck: null,
+                dataUrl: "Release/QuizGameWeb.data",
+                codeUrl: "Release/QuizGameWeb.js",
+                memUrl: "Release/QuizGameWeb.mem",
+
+            };
+        </script>
+        <script src="Release/UnityLoader.js"></script>
+    </div>
+</body>
+
+</html>
